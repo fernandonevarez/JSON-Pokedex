@@ -4,5 +4,3 @@
 function loadPokemon(JSON, outputArea) {
 	outputArea.innerHTML = `MWAHAHAHAHAHAHAHAH`;
 }
-
-loadPokemon(charmeleon, document.body);
