@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+$border-color: #ffde00;
+$border-color-2: #b3a125;
+$text-strong: #ff0000;
+$text-stronger: #cc0000;
+$sub-heading: #3b4cca;
+
+.card {
+	border: 10px solid $border-color;
+	border-radius: 0.5em;
+
+	background: url(../assets/images/card_back.png);
+
+	.top {
+		.top_data {
+			.top_data_top {
+				#name {
+				}
+
+				#hp {
+				}
+
+				#type_icon {
+				}
+			}
+			.top_data_bottom {
+				#image_of {
+				}
+			}
+		}
+	}
+
+	.middle {
+		.middle_base_info {
+			p {
+			}
+		}
+		.middle_abilities {
+		}
+	}
+
+	.bottom {
+		#license_info {
+		}
+	}
+}

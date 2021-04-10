@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACR,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,+CAA+C;CAC5D;;AAQD,AAAA,KAAK,CAAC;EACL,MAAM,EAAE,IAAI,CAAC,KAAK,CAPJ,OAAO;EAQrB,aAAa,EAAE,KAAK;EAEpB,UAAU,EAAE,mCAAmC;CAkC/C",
+    "sources": [
+        "../pokemon_style.scss"
+    ],
+    "names": [],
+    "file": "pokemon_style.css"
+}
