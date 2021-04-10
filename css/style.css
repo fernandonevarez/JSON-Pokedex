@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *,
 *::before,
 *::after {
@@ -16,6 +15,7 @@ body {
 }
 
 body ul {
+  margin-top: 305px;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,12 +32,34 @@ body ul {
 body ul li {
   width: 150px;
   height: 150px;
-  border: 1px solid black;
+  border: 8px solid black;
   border-radius: 150px;
   background-color: red;
+  z-index: 0;
   list-style: none;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body ul li:hover {
+  border: 8px 1px 1px 1px solid black;
+}
+
+body ul li .upper {
+  background: black;
+  width: 100px;
+}
+
+body ul li .bottom {
+  background: black;
+}
+
+body ul li .dot {
+  background: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  width: calc($ball-width/3);
 }
 /*# sourceMappingURL=style.css.map */
-=======
-/* No CSS *//*# sourceMappingURL=style.css.map */
->>>>>>> 8252f417c66b1a09b77eb4d8e479dd6cee5da41a
