@@ -9,13 +9,13 @@ function loadPokemon(json, outputArea) {
 				<div class="top_data" id="top_data">
 					<div class="top_data_top" id="top_data_top">
 						<p id="name">${json.name.toUpperCase()}<p>
-						<p id="hp">000 HP</hp>
+						<p id="hp">000 HP</p>
 						<img src="" alt="type icon" id="type_icon">
 					</div>
 					<div class="top_data_bottom" id="top_data_bottom">
 						<img src="" alt="image of pokemon" id="image_of">
 					</div>
-				</div
+				</div>
 			</div>
 			<div class="middle" id="middle">
 				<div class="middle_base_info" id="middle_base_info">

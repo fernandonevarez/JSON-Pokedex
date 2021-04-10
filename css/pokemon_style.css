@@ -7,4 +7,10 @@
           box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.card {
+  border: 10px solid #ffde00;
+  border-radius: 0.5em;
+  background: url(../assets/images/card_back.png);
+}
 /*# sourceMappingURL=pokemon_style.css.map */
