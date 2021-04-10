@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body ul {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body ul li {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 150px;
+  background-color: red;
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
