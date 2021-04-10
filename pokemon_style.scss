@@ -112,11 +112,48 @@ $sub-heading: #3b4cca;
 			}
 		}
 		.middle_abilities {
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			font-size: calc(36vw / 20);
+			width: 100%;
+			padding: 5px;
+			font-weight: bolder;
+			text-transform: capitalize;
+
+			#ability {
+				color: $sub-heading;
+			}
+		}
+		.middle_stats {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			width: 100%;
+
+			#stat {
+				display: flex;
+				flex-direction: column;
+
+				align-items: center;
+				justify-content: center;
+
+				font-size: calc(36vw / 20);
+				font-weight: 400;
+
+				text-align: center;
+
+				.value {
+					font-size: calc(36vw / 15);
+					font-weight: 600;
+				}
+			}
 		}
 	}
 
 	.bottom {
 		#license_info {
+			font-size: 5px;
 		}
 	}
 }
