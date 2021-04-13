@@ -18,6 +18,7 @@ body {
   display: grid;
   place-items: center;
   font-family: pokemonFont;
+  background: #E9F7FF;
 }
 
 body .title {
@@ -46,7 +47,7 @@ body ul li {
   height: 150px;
   border: 8px solid black;
   border-radius: 150px;
-  background-color: red;
+  background-color: #F60A4A;
   z-index: 0;
   list-style: none;
   display: -ms-grid;
