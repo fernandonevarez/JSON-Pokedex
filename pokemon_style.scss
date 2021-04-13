@@ -13,33 +13,28 @@ $text-strong: #ff0000;
 $text-stronger: #cc0000;
 $sub-heading: #3b4cca;
 
+body {
+	overflow: hidden;
+}
+
 .card {
-	transition: all 0.3s;
-
-	&:hover {
-		transform: scale(1.2);
-		box-shadow: 20px 20px 20px black;
-	}
-
 	border: 15px solid $border-color;
 	border-radius: 0.5em;
+
+	overflow: hidden;
 
 	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
 		url("../assets/images/card_back.png");
 	background-size: cover;
 
-	width: 36vw;
-
-	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-
-	min-width: 130px;
-	min-height: 231px;
+	height: 400px;
+	width: 280px;
 
 	padding: 2px 5px 2px 5px;
 
 	.top {
+		max-width: 100%;
+
 		.top_data {
 			display: flex;
 			flex-direction: column;
@@ -48,14 +43,14 @@ $sub-heading: #3b4cca;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				font-size: calc(36vw / 15);
+				font-size: 14px;
 
 				float: right;
 
 				#name {
 					text-transform: capitalize;
 					font-weight: 900;
-					font-size: calc(36vw / 13);
+					font-size: 18px;
 				}
 
 				#side_grouping {
@@ -115,13 +110,13 @@ $sub-heading: #3b4cca;
 			p {
 				font-style: italic;
 				font-weight: bold;
-				font-size: calc(36vw / 40);
+				font-size: 5px;
 			}
 		}
 		.middle_abilities {
 			border-top: 2px solid black;
 			border-bottom: 2px solid black;
-			font-size: calc(36vw / 20);
+			font-size: 16px;
 			width: 100%;
 			padding: 5px;
 			font-weight: bolder;
@@ -145,13 +140,13 @@ $sub-heading: #3b4cca;
 				align-items: center;
 				justify-content: center;
 
-				font-size: calc(36vw / 20);
+				font-size: 12px;
 				font-weight: 400;
 
 				text-align: center;
 
 				.value {
-					font-size: calc(36vw / 15);
+					font-size: 15px;
 					font-weight: 600;
 				}
 			}
@@ -163,4 +158,12 @@ $sub-heading: #3b4cca;
 			font-size: 5px;
 		}
 	}
+}
+
+.card-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
