@@ -1,2 +1,25 @@
-# JSON-Pokedex
-## Pokedex fun!!!
+# Pokedex Project
+## Made by: Kevin Ochoa, David Nevareaz, Timothy Phillips
+
+
+##Kevin Ochoa
+-
+-
+-
+-
+-
+
+
+#David Nevareaz
+-
+-
+-
+-
+
+
+#Timothy Phillips
+-
+-
+-
+-
+-
