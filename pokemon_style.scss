@@ -45,8 +45,7 @@ body {
 
 		overflow: hidden;
 
-		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-			url("../assets/images/card_back.png");
+		background: url("../assets/images/card_back.png");
 		background-size: cover;
 
 		height: 400px;
@@ -135,7 +134,7 @@ body {
 				p {
 					font-style: italic;
 					font-weight: bold;
-					font-size: 5px;
+					font-size: 7px;
 				}
 			}
 			.middle_abilities {

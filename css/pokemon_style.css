@@ -44,8 +44,7 @@ body {
   border: 15px solid #ffde00;
   border-radius: 0.5em;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../assets/images/card_back.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/card_back.png");
+  background: url("../assets/images/card_back.png");
   background-size: cover;
   height: 400px;
   width: 280px;
@@ -164,7 +163,7 @@ body {
 .card-container .card .middle .middle_base_info p {
   font-style: italic;
   font-weight: bold;
-  font-size: 5px;
+  font-size: 7px;
 }
 
 .card-container .card .middle .middle_abilities {
