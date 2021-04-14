@@ -8,15 +8,17 @@ function generateRotationCSS(x, y, el) {
 	let calcY = (x - box.x - box.width / 2) / constrain;
 
 	// calculate the shadow.
-	card.style.boxShadow = `
+	card.style.boxShadow = `${-(x - box.x - box.width / 2) / 150}px ${
+		-(y - box.y - box.height / 2) / 150
+	}px 0px #111183,
 	${-(x - box.x - box.width / 2) / 12}px 
 	${-(y - box.y - box.height / 2) / 12}px 
 	${
 		Math.sqrt(
 			(x - (box.x + box.width / 2)) ** 2 +
 				(y - (box.y + box.height / 2)) ** 2
-		) / 40
-	}px #0000008e`;
+		) / 10
+	}px #000000B7`;
 
 	// return the generated css.
 	return (

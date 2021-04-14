@@ -18,12 +18,12 @@ body {
   width: 300vw;
   height: 300vh;
   z-index: -1;
-  background: #8ec5fc url(../assets/images/pokeball.svg);
+  background: url(../assets/images/wood.jpg);
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   background-position: center;
   background-repeat: repeat;
-  background-size: 5vw;
+  background-size: 20vw;
 }
 
 .card-container {
@@ -44,8 +44,7 @@ body {
   border: 15px solid #ffde00;
   border-radius: 0.5em;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../assets/images/card_back.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/card_back.png");
+  background: url("../assets/images/card_back.png");
   background-size: cover;
   height: 400px;
   width: 280px;
@@ -164,7 +163,7 @@ body {
 .card-container .card .middle .middle_base_info p {
   font-style: italic;
   font-weight: bold;
-  font-size: 5px;
+  font-size: 7px;
 }
 
 .card-container .card .middle .middle_abilities {
@@ -228,5 +227,27 @@ body {
 
 .card-container .card .bottom #license_info {
   font-size: 5px;
+}
+
+#home {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: none;
+  outline: none;
+  margin: 10px;
+  padding: 5px 15px 8px 15px;
+  font-weight: bolder;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #ffde00;
+  color: black;
+  border-radius: 0.5em;
+  font-size: 28px;
+}
+
+#home:hover {
+  background-color: #3b4cca;
+  color: white;
 }
 /*# sourceMappingURL=pokemon_style.css.map */
