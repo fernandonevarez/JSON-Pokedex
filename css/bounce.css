@@ -4,22 +4,22 @@
 }
 
 .ballWrapper a {
-    animation: bounce 1s;
+    animation: bounce 1s, shake 1s;
+    animation-delay: 0, 1s;
     transform: translateY(0px);
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: both, forwards;
     position: relative;
-    margin: 50px;
     top: 0;
 }
 
 .ballWrapper a:nth-child(2) {
-    animation-delay: 300ms;
+    animation-delay: 300ms, 2s;
     top: 0;
 }
 
 .ballWrapper a:nth-child(3) {
-    animation-delay: 600ms;
+    animation-delay: 600ms, 2s;
     top: 0;
 }
 
@@ -37,5 +37,18 @@
         top: var(--bounce-height);
         -webkit-animation-timing-function: ease-in;
         opacity: 1;
+    }
+}
+
+@keyframes shake {
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        animation-delay: 1s;
+    }
+    75% {
+        transform: rotate(-30deg);
     }
 }
