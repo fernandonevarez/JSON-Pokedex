@@ -12,15 +12,17 @@
 
 
 
-### 2021-04-13
-## Kevin:
+## 2021-04-13
+### Kevin:
 - Worked on homepage, Background, Favicons, Images/Content.
 - Worked on README.md.
+- Fixed Title on Landing Page
 
-## David:
+### David:
 - Worked on homepage and scss.
 - Worked on the animation for the Pokeballs.
-## Tim:
+- Finshed Pokeball SVG
+### Tim:
 - Working on adding animation to card when mouse over
 - SCSS 3 Pokemon webpages through Javascript
-- Fixed Card CSS
+- Finshed Cards CSS and Javscript
