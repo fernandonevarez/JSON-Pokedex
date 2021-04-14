@@ -3,36 +3,24 @@
     --bounce-height: 160px
 }
 
-ul li {
-    list-style: none;
-    width: var(--ball-size);
-    height: var(--ball-size);
-    border: 5px solid black;
-    border-radius: 100%;
-    background: red;
+.ballWrapper a {
     animation: bounce 1s;
     transform: translateY(0px);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     position: relative;
     margin: 50px;
+    top: 0;
 }
 
-ul li .upper {
-    /* width: var(--ball-size); */
-    /* height: calc(var(--ball-size)/3); */
-    /* as the half of the width */
-    /* background-color: gold; */
-    /* border-top-left-radius: 100%; */
-    /* 100px of height + 10px of border */
-    /* border-top-right-radius: calc(calc(var(--ball-size)/3) + 10px); */
-    /* 100px of height + 10px of border */
-    /* border: 10px solid gray; */
-    /* border-bottom: 0; */
-    height: 45px;
-    width: 90px;
-    border-radius: 90px 90px 0 0;
-    background: green;
+.ballWrapper a:nth-child(2) {
+    animation-delay: 300ms;
+    top: 0;
+}
+
+.ballWrapper a:nth-child(3) {
+    animation-delay: 300ms;
+    top: 0;
 }
 
 @keyframes bounce {
@@ -40,31 +28,12 @@ ul li .upper {
         top: 0;
         -webkit-animation-timing-function: ease-in;
     }
-    16% {
+    50% {
         top: calc(var(--bounce-height)/2);
-        -webkit-animation-timing-function: ease-out;
-    }
-    32% {
-        top: var(--bounce-height);
-        height: calc(--ball-size - 30px);
-        -webkit-animation-timing-function: ease-in;
-    }
-    48% {
-        top: calc(--bounce-height/2);
-        height: var(--ball-size);
-        -webkit-animation-timing-function: ease-out;
-    }
-    64% {
-        top: 0px;
-        -webkit-animation-timing-function: ease-in;
-    }
-    80% {
-        top: calc(--bounce-height/2);
-        height: var(--ball-size);
         -webkit-animation-timing-function: ease-out;
     }
     100% {
         top: var(--bounce-height);
-        -webkit-animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-in;
     }
 }
