@@ -18,12 +18,12 @@ body {
   width: 300vw;
   height: 300vh;
   z-index: -1;
-  background: #8ec5fc url(../assets/images/pokeball.svg);
+  background: url(../assets/images/wood.jpg);
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   background-position: center;
   background-repeat: repeat;
-  background-size: 5vw;
+  background-size: 20vw;
 }
 
 .card-container {
