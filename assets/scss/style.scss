@@ -9,6 +9,10 @@
 
 $ball-width: 150px;
 body {
+    .title {
+        font-size: 16px;
+        color: white;
+    }
     display: grid;
     place-items: center;
     ul {
@@ -16,13 +20,6 @@ body {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        li {
-            width: $ball-width;
-            height: $ball-width;
-            border: 1px solid black;
-            border-radius: $ball-width;
-            background-color: red;
-            list-style: none;
-        }
+        li {}
     }
 }

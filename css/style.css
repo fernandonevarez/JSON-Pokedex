@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *,
 *::before,
 *::after {
@@ -15,6 +14,12 @@ body {
   place-items: center;
 }
 
+body .title {
+  font-size: 16px;
+  color: white;
+  --webkit-text-stroke: black 5px;
+}
+
 body ul {
   width: 80%;
   display: -webkit-box;
@@ -28,16 +33,4 @@ body ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-
-body ul li {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  border-radius: 150px;
-  background-color: red;
-  list-style: none;
-}
 /*# sourceMappingURL=style.css.map */
-=======
-/* No CSS *//*# sourceMappingURL=style.css.map */
->>>>>>> 8252f417c66b1a09b77eb4d8e479dd6cee5da41a
