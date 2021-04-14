@@ -17,147 +17,19 @@ body {
 	overflow: hidden;
 }
 
-.card {
-	border: 15px solid $border-color;
-	border-radius: 0.5em;
+.card-container::before {
+	content: "";
 
-	overflow: hidden;
+	position: absolute;
 
-	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-		url("../assets/images/card_back.png");
-	background-size: cover;
-
-	height: 400px;
-	width: 280px;
-
-	padding: 2px 5px 2px 5px;
-
-	.top {
-		max-width: 100%;
-
-		.top_data {
-			display: flex;
-			flex-direction: column;
-
-			.top_data_top {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				font-size: 14px;
-
-				float: right;
-
-				#name {
-					text-transform: capitalize;
-					font-weight: 900;
-					font-size: 18px;
-				}
-
-				#side_grouping {
-					display: flex;
-					align-items: center;
-					justify-content: space-evenly;
-
-					#hp {
-						color: $text-strong;
-						font-weight: bolder;
-					}
-
-					#type_icon {
-						width: 3vw;
-						height: 3vw;
-						margin-bottom: 10px;
-						margin-left: 5px;
-					}
-				}
-			}
-			.top_data_bottom {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-
-				#image_of {
-					border: 10px solid $border-color;
-					width: 80%;
-					border-radius: 0.05em;
-				}
-			}
-		}
-	}
-
-	.middle {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		.middle_base_info {
-			background: linear-gradient(
-				90deg,
-				$border-color-2,
-				$border-color,
-				white,
-				$border-color,
-				$border-color-2
-			);
-
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-
-			width: 75%;
-			margin: 1px;
-
-			p {
-				font-style: italic;
-				font-weight: bold;
-				font-size: 5px;
-			}
-		}
-		.middle_abilities {
-			border-top: 2px solid black;
-			border-bottom: 2px solid black;
-			font-size: 16px;
-			width: 100%;
-			padding: 5px;
-			font-weight: bolder;
-			text-transform: capitalize;
-
-			#ability {
-				color: $sub-heading;
-			}
-		}
-		.middle_stats {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			width: 100%;
-
-			#stat {
-				display: flex;
-				flex-direction: column;
-
-				align-items: center;
-				justify-content: center;
-
-				font-size: 12px;
-				font-weight: 400;
-
-				text-align: center;
-
-				.value {
-					font-size: 15px;
-					font-weight: 600;
-				}
-			}
-		}
-	}
-
-	.bottom {
-		#license_info {
-			font-size: 5px;
-		}
-	}
+	width: 300vw;
+	height: 300vh;
+	z-index: -1;
+	background: #8ec5fc url(../assets/images/pokeball.svg);
+	transform: rotate(30deg);
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 5vw;
 }
 
 .card-container {
@@ -166,4 +38,147 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	.card {
+		border: 15px solid $border-color;
+		border-radius: 0.5em;
+
+		overflow: hidden;
+
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+			url("../assets/images/card_back.png");
+		background-size: cover;
+
+		height: 400px;
+		width: 280px;
+
+		padding: 2px 5px 2px 5px;
+
+		.top {
+			max-width: 100%;
+
+			.top_data {
+				display: flex;
+				flex-direction: column;
+
+				.top_data_top {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					font-size: 14px;
+
+					float: right;
+
+					#name {
+						text-transform: capitalize;
+						font-weight: 900;
+						font-size: 18px;
+					}
+
+					#side_grouping {
+						display: flex;
+						align-items: center;
+						justify-content: space-evenly;
+
+						#hp {
+							color: $text-strong;
+							font-weight: bolder;
+						}
+
+						#type_icon {
+							width: 3vw;
+							height: 3vw;
+							margin-bottom: 10px;
+							margin-left: 5px;
+						}
+					}
+				}
+				.top_data_bottom {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					#image_of {
+						border: 5px solid $border-color;
+						width: 80%;
+						border-radius: 0.05em;
+					}
+				}
+			}
+		}
+
+		.middle {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.middle_base_info {
+				background: linear-gradient(
+					90deg,
+					$border-color-2,
+					$border-color,
+					white,
+					$border-color,
+					$border-color-2
+				);
+
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+
+				width: 75%;
+				margin: 1px;
+
+				p {
+					font-style: italic;
+					font-weight: bold;
+					font-size: 5px;
+				}
+			}
+			.middle_abilities {
+				border-top: 2px solid black;
+				border-bottom: 2px solid black;
+				font-size: 16px;
+				width: 100%;
+				padding: 5px;
+				font-weight: bolder;
+				text-transform: capitalize;
+
+				#ability {
+					color: $sub-heading;
+				}
+			}
+			.middle_stats {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				width: 100%;
+
+				#stat {
+					display: flex;
+					flex-direction: column;
+
+					align-items: center;
+					justify-content: center;
+
+					font-size: 12px;
+					font-weight: 400;
+
+					text-align: center;
+
+					.value {
+						font-size: 15px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		.bottom {
+			#license_info {
+				font-size: 5px;
+			}
+		}
+	}
 }

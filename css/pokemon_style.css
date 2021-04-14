@@ -12,7 +12,35 @@ body {
   overflow: hidden;
 }
 
-.card {
+.card-container::before {
+  content: "";
+  position: absolute;
+  width: 300vw;
+  height: 300vh;
+  z-index: -1;
+  background: #8ec5fc url(../assets/images/pokeball.svg);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 5vw;
+}
+
+.card-container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-container .card {
   border: 15px solid #ffde00;
   border-radius: 0.5em;
   overflow: hidden;
@@ -24,11 +52,11 @@ body {
   padding: 2px 5px 2px 5px;
 }
 
-.card .top {
+.card-container .card .top {
   max-width: 100%;
 }
 
-.card .top .top_data {
+.card-container .card .top .top_data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +66,7 @@ body {
           flex-direction: column;
 }
 
-.card .top .top_data .top_data_top {
+.card-container .card .top .top_data .top_data_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,13 +80,13 @@ body {
   float: right;
 }
 
-.card .top .top_data .top_data_top #name {
+.card-container .card .top .top_data .top_data_top #name {
   text-transform: capitalize;
   font-weight: 900;
   font-size: 18px;
 }
 
-.card .top .top_data .top_data_top #side_grouping {
+.card-container .card .top .top_data .top_data_top #side_grouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,19 +98,19 @@ body {
           justify-content: space-evenly;
 }
 
-.card .top .top_data .top_data_top #side_grouping #hp {
+.card-container .card .top .top_data .top_data_top #side_grouping #hp {
   color: #ff0000;
   font-weight: bolder;
 }
 
-.card .top .top_data .top_data_top #side_grouping #type_icon {
+.card-container .card .top .top_data .top_data_top #side_grouping #type_icon {
   width: 3vw;
   height: 3vw;
   margin-bottom: 10px;
   margin-left: 5px;
 }
 
-.card .top .top_data .top_data_bottom {
+.card-container .card .top .top_data .top_data_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,13 +123,13 @@ body {
           align-items: center;
 }
 
-.card .top .top_data .top_data_bottom #image_of {
-  border: 10px solid #ffde00;
+.card-container .card .top .top_data .top_data_bottom #image_of {
+  border: 5px solid #ffde00;
   width: 80%;
   border-radius: 0.05em;
 }
 
-.card .middle {
+.card-container .card .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +142,7 @@ body {
           align-items: center;
 }
 
-.card .middle .middle_base_info {
+.card-container .card .middle .middle_base_info {
   background: -webkit-gradient(linear, left top, right top, from(#b3a125), color-stop(#ffde00), color-stop(white), color-stop(#ffde00), to(#b3a125));
   background: linear-gradient(90deg, #b3a125, #ffde00, white, #ffde00, #b3a125);
   display: -webkit-box;
@@ -130,13 +158,13 @@ body {
   margin: 1px;
 }
 
-.card .middle .middle_base_info p {
+.card-container .card .middle .middle_base_info p {
   font-style: italic;
   font-weight: bold;
   font-size: 5px;
 }
 
-.card .middle .middle_abilities {
+.card-container .card .middle .middle_abilities {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   font-size: 16px;
@@ -146,11 +174,11 @@ body {
   text-transform: capitalize;
 }
 
-.card .middle .middle_abilities #ability {
+.card-container .card .middle .middle_abilities #ability {
   color: #3b4cca;
 }
 
-.card .middle .middle_stats {
+.card-container .card .middle .middle_stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +191,7 @@ body {
   width: 100%;
 }
 
-.card .middle .middle_stats #stat {
+.card-container .card .middle .middle_stats #stat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,26 +210,12 @@ body {
   text-align: center;
 }
 
-.card .middle .middle_stats #stat .value {
+.card-container .card .middle .middle_stats #stat .value {
   font-size: 15px;
   font-weight: 600;
 }
 
-.card .bottom #license_info {
+.card-container .card .bottom #license_info {
   font-size: 5px;
-}
-
-.card-container {
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 /*# sourceMappingURL=pokemon_style.css.map */

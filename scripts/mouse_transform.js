@@ -1,14 +1,24 @@
 let constrain = 100;
-let mouseOverContainer = document.getElementById("card-container");
+let card_container = document.getElementById("card-container");
 let card = document.getElementById("card");
 
-function transforms(x, y, el) {
+function generateRotationCSS(x, y, el) {
 	let box = el.getBoundingClientRect();
 	let calcX = -(y - box.y - box.height / 2) / constrain;
 	let calcY = (x - box.x - box.width / 2) / constrain;
 
-	card.style.boxShadow = "20px 20px 20px black;";
+	// calculate the shadow.
+	card.style.boxShadow = `
+	${-(x - box.x - box.width / 2) / 12}px 
+	${-(y - box.y - box.height / 2) / 12}px 
+	${
+		Math.sqrt(
+			(x - (box.x + box.width / 2)) ** 2 +
+				(y - (box.y + box.height / 2)) ** 2
+		) / 40
+	}px #0000008e`;
 
+	// return the generated css.
 	return (
 		"perspective(100px) " +
 		"   rotateX(" +
@@ -20,15 +30,15 @@ function transforms(x, y, el) {
 	);
 }
 
-function transformElement(el, xyEl) {
-	el.style.transform = transforms.apply(null, xyEl);
+function applyRotationCSS(el, xyEl) {
+	el.style.transform = generateRotationCSS.apply(null, xyEl);
 }
 
-mouseOverContainer.onmousemove = function (e) {
+card_container.addEventListener("mousemove", (e) => {
 	let xy = [e.clientX, e.clientY];
 	let position = xy.concat([card]);
 
 	window.requestAnimationFrame(function () {
-		transformElement(card, position);
+		applyRotationCSS(card, position);
 	});
-};
+});
