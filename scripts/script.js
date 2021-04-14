@@ -26,7 +26,7 @@ function loadPokemon(json, outputArea) {
 							</div>
 						</div>
 						<div class="top_data_bottom" id="top_data_bottom">
-							<img src="" alt="image of pokemon" id="image_of">
+							<img src="../assets/images/${json.name}.jpg" alt="image of pokemon" id="image_of">
 						</div>
 					</div>
 				</div>
