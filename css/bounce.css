@@ -7,7 +7,7 @@
     animation: bounce 1s;
     transform: translateY(0px);
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     position: relative;
     margin: 50px;
     top: 0;
@@ -19,7 +19,7 @@
 }
 
 .ballWrapper a:nth-child(3) {
-    animation-delay: 300ms;
+    animation-delay: 600ms;
     top: 0;
 }
 
@@ -27,6 +27,7 @@
     0% {
         top: 0;
         -webkit-animation-timing-function: ease-in;
+        opacity: 0;
     }
     50% {
         top: calc(var(--bounce-height)/2);
@@ -35,5 +36,6 @@
     100% {
         top: var(--bounce-height);
         -webkit-animation-timing-function: ease-in;
+        opacity: 1;
     }
 }
