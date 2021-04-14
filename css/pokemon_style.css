@@ -228,4 +228,26 @@ body {
 .card-container .card .bottom #license_info {
   font-size: 5px;
 }
+
+#home {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: none;
+  outline: none;
+  margin: 10px;
+  padding: 5px 15px 8px 15px;
+  font-weight: bolder;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #ffde00;
+  color: black;
+  border-radius: 0.5em;
+  font-size: 28px;
+}
+
+#home:hover {
+  background-color: #3b4cca;
+  color: white;
+}
 /*# sourceMappingURL=pokemon_style.css.map */
