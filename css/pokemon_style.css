@@ -126,6 +126,8 @@ body {
 .card-container .card .top .top_data .top_data_bottom #image_of {
   border: 5px solid #ffde00;
   width: 80%;
+  margin-top: 15px;
+  margin-bottom: 5px;
   border-radius: 0.05em;
 }
 
@@ -170,12 +172,16 @@ body {
   font-size: 16px;
   width: 100%;
   padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-weight: bolder;
   text-transform: capitalize;
 }
 
 .card-container .card .middle .middle_abilities #ability {
   color: #3b4cca;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .card-container .card .middle .middle_stats {
@@ -213,6 +219,10 @@ body {
 .card-container .card .middle .middle_stats #stat .value {
   font-size: 15px;
   font-weight: 600;
+}
+
+.card-container .card .bottom {
+  margin-top: 15px;
 }
 
 .card-container .card .bottom #license_info {
