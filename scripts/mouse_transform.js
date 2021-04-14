@@ -15,8 +15,8 @@ function generateRotationCSS(x, y, el) {
 		Math.sqrt(
 			(x - (box.x + box.width / 2)) ** 2 +
 				(y - (box.y + box.height / 2)) ** 2
-		) / 40
-	}px #0000008e`;
+		) / 10
+	}px #000000B7`;
 
 	// return the generated css.
 	return (
