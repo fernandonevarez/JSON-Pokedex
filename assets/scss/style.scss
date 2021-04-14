@@ -7,19 +7,50 @@
     box-sizing: border-box;
 }
 
+$blue: #0564BA;
+$yellow: #FFCC00;
 $ball-width: 150px;
+@font-face {
+    font-family: pokeFont;
+    src: url("../Pokemon.ttf")
+}
+
 body {
-    .title {
-        font-size: 16px;
-        color: white;
-    }
+    $background: #E9F7FF;
     display: grid;
     place-items: center;
-    ul {
-        width: 80%;
+    font-family: pokeFont;
+    // .title {
+    //     $blue: #0564BA;
+    //     $yellow: #FFCC00;
+    //     font-size: 70px;
+    //     color: $yellow;
+    //     text-shadow: $blue 3px 0px 0px, $blue 2.83487px 0.981584px 0px, $blue 2.35766px 1.85511px 0px, $blue 1.62091px 2.52441px 0px, $blue 0.705713px 2.91581px 0px, $blue -0.287171px 2.98622px 0px, $blue -1.24844px 2.72789px 0px, $blue -2.07227px 2.16926px 0px, $blue -2.66798px 1.37182px 0px, $blue -2.96998px 0.42336px 0px, $blue -2.94502px -0.571704px 0px, $blue -2.59586px -1.50383px 0px, $blue -1.96093px -2.27041px 0px, $blue -1.11013px -2.78704px 0px, $blue -0.137119px -2.99686px 0px, $blue 0.850987px -2.87677px 0px, $blue 1.74541px -2.43999px 0px, $blue 2.44769px -1.73459px 0px, $blue 2.88051px -0.838247px 0px;
+    // }
+    .title {
+        width: 100vw;
+        text-align: center;
+        h1 {
+            font-family: pokeFont;
+            font-size: 5vw;
+            color: $yellow;
+            text-shadow: -2px 10px 0px $blue, -3px 9px 0px $blue, -3px 11px 0px $blue, -3px -5px 0px $blue;
+        }
+    }
+    .ballWrapper {
+        width: 80vw;
         display: flex;
-        flex-flow: row nowrap;
         justify-content: space-evenly;
-        li {}
+        a {
+            svg {
+                width: 150px;
+                height: 150px;
+                &:hover {
+                    #upper {
+                        transform: translateY(-100px);
+                    }
+                }
+            }
+        }
     }
 }
