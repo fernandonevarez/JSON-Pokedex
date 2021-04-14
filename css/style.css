@@ -42,12 +42,12 @@ body .ballWrapper {
           justify-content: space-evenly;
 }
 
-body .ballWrapper object {
+body .ballWrapper a svg {
   width: 150px;
   height: 150px;
 }
 
-body .ballWrapper object:hover #upper {
+body .ballWrapper a svg:hover #upper {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
