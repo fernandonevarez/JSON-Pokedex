@@ -1,6 +1,7 @@
 let constrain = 100;
-let card_container = document.getElementById("card-container");
+let card_container = document.getElementById("card_container");
 let card = document.getElementById("card");
+let card_holder = document.getElementById("card_holder");
 
 function generateRotationCSS(x, y, el) {
 	let box = el.getBoundingClientRect();
@@ -36,11 +37,17 @@ function applyRotationCSS(el, xyEl) {
 	el.style.transform = generateRotationCSS.apply(null, xyEl);
 }
 
-card_container.addEventListener("mousemove", (e) => {
+card_holder.addEventListener("mousemove", (e) => {
 	let xy = [e.clientX, e.clientY];
 	let position = xy.concat([card]);
 
 	window.requestAnimationFrame(function () {
 		applyRotationCSS(card, position);
 	});
+});
+
+card_holder.addEventListener("mouseleave", (e) => {
+	window.setTimeout(() => {
+		card.style = "";
+	}, 100);
 });
