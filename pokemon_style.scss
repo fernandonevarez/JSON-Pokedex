@@ -31,6 +31,7 @@ body {
 
 	background-repeat: repeat;
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
@@ -71,7 +72,26 @@ body {
 			}
 		}
 
+		&:active {
+			transition-duration: 0.2s;
+			transform: rotateY(180deg);
+
+			.card {
+				border: 15px solid #111183;
+				background-image: url(../assets/images/card_back.jpg);
+				background-position: center;
+				background-size: 115%;
+
+				* {
+					display: none;
+				}
+			}
+		}
+
 		.card {
+			cursor: pointer;
+			user-select: none;
+
 			border: 15px solid $border-color;
 			border-radius: 0.5em;
 

@@ -25,6 +25,7 @@ body {
           filter: brightness(0.5);
   background-repeat: repeat;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -79,7 +80,30 @@ body {
   transition: none;
 }
 
+.card-container .card_holder:active {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-container .card_holder:active .card {
+  border: 15px solid #111183;
+  background-image: url(../assets/images/card_back.jpg);
+  background-position: center;
+  background-size: 115%;
+}
+
+.card-container .card_holder:active .card * {
+  display: none;
+}
+
 .card-container .card_holder .card {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border: 15px solid #ffde00;
   border-radius: 0.5em;
   -webkit-transition-property: -webkit-box-shadow transform;

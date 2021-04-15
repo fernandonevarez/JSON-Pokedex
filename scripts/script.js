@@ -12,43 +12,46 @@ let stat_shorten = {
 
 // Generate html from a JSON object.
 function loadPokemon(json, outputArea) {
+	let { name, ...poke } = json;
+	console.log(poke);
+
 	// structure
 	outputArea.innerHTML += `
 		<div id="card-container" class="card-container">
 			<div class="card_holder" id="card_holder">	
 				<div class="card" id="card">
-						<div class="top" id="top">
-							<div class="top_data" id="top_data">
-								<div class="top_data_top" id="top_data_top">
-									<p id="name">${json.name}<p>
-									<div id="side_grouping">
-										<p id="hp"><span id="hp_disp">000</span> HP</p>
-										<img src="../assets/images/fire_type.svg" alt="type icon" id="type_icon">
-									</div>
-								</div>
-								<div class="top_data_bottom" id="top_data_bottom">
-									<img src="../assets/images/${json.name}.jpg" alt="image of pokemon" id="image_of">
+					<div class="top" id="top">
+						<div class="top_data" id="top_data">
+							<div class="top_data_top" id="top_data_top">
+								<p id="name">${name}<p>
+								<div id="side_grouping">
+									<p id="hp"><span id="hp_disp">000</span> HP</p>
+									<img draggable="false" src="../assets/images/fire_type.svg" alt="type icon" id="type_icon">
 								</div>
 							</div>
-						</div>
-						<div class="middle" id="middle">
-							<div class="middle_base_info" id="middle_base_info">
-								<p><span id="type_value">TYPE</span> Pokémon.</p>
-								<p>Height: <span id="height_value">HEIGHT</span>',</p>
-								<p>Weight: <span id="weight_value">WEIGHT</span> lbs.</p>
+							<div class="top_data_bottom" id="top_data_bottom">
+								<img draggable="false" src="../assets/images/${name}.jpg" alt="image of pokemon" id="image_of">
 							</div>
-							<div class="middle_abilities" id="middle_abilities">
-
-							</div>
-
-							<div class="middle_stats" id="middle_stats">
-
-							</div>
-						</div>
-						<div class="bottom" id="bottom">
-							<p id="license_info">All Images/Names © The Pokemon Company
 						</div>
 					</div>
+					<div class="middle" id="middle">
+						<div class="middle_base_info" id="middle_base_info">
+							<p><span id="type_value">TYPE</span> Pokémon.</p>
+							<p>Height: <span id="height_value">HEIGHT</span>m,</p>
+							<p>Weight: <span id="weight_value">WEIGHT</span>kg.</p>
+						</div>
+						<div class="middle_abilities" id="middle_abilities">
+
+						</div>
+
+						<div class="middle_stats" id="middle_stats">
+
+						</div>
+					</div>
+					<div class="bottom" id="bottom">
+						<p id="license_info">All Images/Names © The Pokemon Company. Card Code by @NotTimTam
+					</div>
+				</div>
 			</div>
 		</div>
 	`;
@@ -59,26 +62,28 @@ function loadPokemon(json, outputArea) {
 	stats_disp.innerHTML += `
 		<div id="stat">
 			<p>EXP</p>
-			<p class="value">${json.base_experience}</p>
+			<p class="value">${poke.base_experience}</p>
 		</div>
 	`;
 
 	// random stat placement.
-	document.getElementById("height_value").innerHTML = json.height;
-	document.getElementById("weight_value").innerHTML = json.weight;
+	document.getElementById("height_value").innerHTML =
+		Number(poke.height) * 10;
+	document.getElementById("weight_value").innerHTML =
+		Number(poke.weight) * 10;
 
 	// abilities
 	let ab_disp = document.getElementById("middle_abilities");
 
 	// abilities
-	for (let ability of json.abilities) {
+	for (let ability of poke.abilities) {
 		ab_disp.innerHTML += `
 			<p id="ability">${ability.name}</p>
 		`;
 	}
 
 	// stats
-	for (let stat of json.stats) {
+	for (let stat of poke.stats) {
 		if (stat.stat.name == "hp") {
 			document.getElementById("hp_disp").innerHTML = stat.base_stat;
 		} else {
@@ -93,7 +98,7 @@ function loadPokemon(json, outputArea) {
 
 	// types
 	let typeString = "";
-	for (let type of json.types) {
+	for (let type of poke.types) {
 		typeString += type.type.name + "/";
 	}
 	typeString = typeString.substring(0, typeString.length - 1).toUpperCase();
