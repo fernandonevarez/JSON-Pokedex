@@ -19,7 +19,7 @@
 }
 
 .ballWrapper a:hover {
-    animation: shake 1s;
+    animation: shake;
     /* animation-delay: 1s; */
     animation-iteration-count: 1;
     animation-fill-mode: both;
