@@ -88,7 +88,7 @@ body {
 }
 
 .card-container .card_holder:active .card {
-  border: 15px solid #3b4cca;
+  border: 15px solid #111183;
   background-image: url(../assets/images/card_back.jpg);
   background-position: center;
   background-size: 115%;
