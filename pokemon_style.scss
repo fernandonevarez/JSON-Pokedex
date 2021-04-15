@@ -72,8 +72,24 @@ body {
 			}
 		}
 
+		&:active {
+			transition-duration: 0.2s;
+			transform: rotateY(180deg);
+
+			.card {
+				border: 15px solid $sub-heading;
+				background-image: url(../assets/images/card_back.jpg);
+				background-position: center;
+				background-size: 115%;
+
+				* {
+					display: none;
+				}
+			}
+		}
+
 		.card {
-			cursor: all-scroll;
+			cursor: pointer;
 			user-select: none;
 
 			border: 15px solid $border-color;

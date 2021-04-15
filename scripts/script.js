@@ -23,11 +23,11 @@ function loadPokemon(json, outputArea) {
 									<p id="name">${json.name}<p>
 									<div id="side_grouping">
 										<p id="hp"><span id="hp_disp">000</span> HP</p>
-										<img src="../assets/images/fire_type.svg" alt="type icon" id="type_icon">
+										<img draggable="false" src="../assets/images/fire_type.svg" alt="type icon" id="type_icon">
 									</div>
 								</div>
 								<div class="top_data_bottom" id="top_data_bottom">
-									<img src="../assets/images/${json.name}.jpg" alt="image of pokemon" id="image_of">
+									<img draggable="false" src="../assets/images/${json.name}.jpg" alt="image of pokemon" id="image_of">
 								</div>
 							</div>
 						</div>
