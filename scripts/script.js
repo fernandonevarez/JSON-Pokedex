@@ -49,7 +49,7 @@ function loadPokemon(json, outputArea) {
 						</div>
 					</div>
 					<div class="bottom" id="bottom">
-						<p id="license_info">All Images/Names © The Pokemon Company
+						<p id="license_info">All Images/Names © The Pokemon Company. Card Code by @NotTimTam
 					</div>
 				</div>
 			</div>
