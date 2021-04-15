@@ -72,6 +72,9 @@ body {
 		}
 
 		.card {
+			cursor: all-scroll;
+			user-select: none;
+
 			border: 15px solid $border-color;
 			border-radius: 0.5em;
 

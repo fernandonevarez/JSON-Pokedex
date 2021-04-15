@@ -46,7 +46,7 @@ card_holder.addEventListener("mousemove", (e) => {
 	});
 });
 
-card.addEventListener("mouseleave", (e) => {
+card_holder.addEventListener("mouseleave", (e) => {
 	window.setTimeout(() => {
 		card.style = "";
 	}, 100);
