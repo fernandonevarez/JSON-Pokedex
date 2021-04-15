@@ -8,37 +8,44 @@
 
 /* first pokemon ball */
 
+.ballWrapper a:hover {
+    animation: 1000ms ease 0ms 1 normal none running shake;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: both;
+}
+
 .ballWrapper a:nth-child(1) {
-    animation: bounce 1s;
-    animation-delay: 0s;
+    animation: 1000ms ease 0ms 1 normal none running bounce;
+    /* animation-delay: 0ms; */
     transform: translateY(0px);
-    animation-iteration-count: 1;
+    /* animation-iteration-count: 1; */
     animation-fill-mode: both;
     position: relative;
     /* top: 0; */
-}
-
-.ballWrapper a:hover {
-    animation: shake;
-    /* animation-delay: 1s; */
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
 }
 
 
 /* Second pokemon ball */
 
 .ballWrapper a:nth-child(2) {
-    animation-delay: 300ms;
-    top: 0;
+    /* animation-delay: 300; */
+    animation: 1000ms ease 250ms 1 normal none running bounce;
+    /* transform: translateY(0px); */
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: both;
+    position: relative;
 }
 
 
 /* third pokemon ball */
 
 .ballWrapper a:nth-child(3) {
-    animation-delay: 600ms;
-    top: 0;
+    /* animation-delay: 600ms; */
+    animation: 1000ms ease 500ms 1 normal none running bounce;
+    /* transform: translateY(0px); */
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: both;
+    position: relative;
 }
 
 
@@ -67,9 +74,6 @@
     }
     25% {
         transform: rotate(30deg);
-    }
-    50% {
-        transform: rotate(0deg);
     }
     75% {
         transform: rotate(-30deg);
