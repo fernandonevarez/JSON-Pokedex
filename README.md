@@ -1,5 +1,8 @@
 # Project
-## Create a Pokedex using Jason, Javascript, SASS, and HTML.
+## Project Description:
+> This project was made to show json, deconstructing object, javascript, sass and minimum html.
+> In order to show that we create html webpages made from javascript files. 
+> The theme was a pokedex and pokemon.
 
 # Work Journal
 ## 2021-04-09
