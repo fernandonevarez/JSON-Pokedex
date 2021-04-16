@@ -43,3 +43,16 @@
 ### Timothy:
 - added another animation to Pokecard
 - added the desconstruing of object 
+
+## 2021-04-16
+
+### Kevin:
+- Finished the Home Page technichal stuff
+
+### David:
+- Animations on the Home screen
+- Finished pokeballs div
+
+### Timonthy: 
+- Finished the The Cards NEW animation.
+- Fished completly
