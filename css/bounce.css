@@ -8,11 +8,12 @@
 
 /* first pokemon ball */
 
-.ballWrapper a:hover {
+
+/* .ballWrapper a:hover {
     animation: 1000ms ease 0ms 1 normal none running shake;
-    /* animation-iteration-count: 1; */
+    animation-iteration-count: 1;
     animation-fill-mode: both;
-}
+} */
 
 .ballWrapper a:nth-child(1) {
     animation: 1000ms ease 0ms 1 normal none running bounce;
@@ -68,17 +69,15 @@
     }
 }
 
-@keyframes shake {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(30deg);
-    }
-    75% {
-        transform: rotate(-30deg);
-    }
+.ballWrapper a svg:hover {
+    animation: 1000ms ease 0ms 1 normal none running openball;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openball {
+    0% {}
     100% {
-        transform: rotate(0deg);
+        opacity: 0;
     }
 }
