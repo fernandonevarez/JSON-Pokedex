@@ -3,16 +3,13 @@ let ballArray = document.getElementsByClassName("pokeball");
 let handArray = document.getElementsByClassName("hands")
 
 console.log('test')
-    // Pokemon 
-    // let Charmander = document.getElementById("pokemon-1")
-    // let Charmeleon = document.getElementById("pokemon-2")
-    // let Charzard = document.getElementById("pokemon-3")
 
 for (ball in ballArray) {
     ballArray[ball].addEventListener("mouseenter", function(e) {
-        let id = e.target.closest("a").rel
+        let id = e.target.closest("a").rel // 1, 2, or 3
         let imgId = `pokemon-${id}`
         let target = document.getElementById(imgId)
+            // ex: pokemon-1
 
         let handId = `hand-${id}`
         let hand = document.getElementById(handId)
