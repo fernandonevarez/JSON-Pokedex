@@ -19,12 +19,12 @@ $ball-width: 150px;
     transition: all 1s;
 }
 
-.hide {
-    opacity: 1;
+.picture2 {
+    transition: all .8s;
 }
 
-.hands {
-    transition: all 1s;
+.hide {
+    opacity: 1;
 }
 
 .hover {
@@ -77,10 +77,8 @@ body {
         width: 80vw;
         display: flex;
         justify-content: space-evenly;
-        // height: 0;
         img {
             height: 100px;
-            // z-index: 100;
             &:nth-child(1) {
                 position: relative;
                 top: 156px;
@@ -114,14 +112,12 @@ body {
                 height: 150px;
                 &:hover {
                     animation: shake 1s infinite;
-                    // transition-duration: 200ms;
                 }
             }
         }
     }
 }
 
-$shakeDeg: 15deg;
 @keyframes shake {
     0% {
         transform: translate(0, 0) rotate(0);
@@ -143,23 +139,23 @@ $shakeDeg: 15deg;
     }
 }
 
-@keyframes show {
-    0% {
-        transform: rotateY(0deg);
-    }
-    25% {
-        opacity: 0;
-        transform: rotateY(90deg);
-    }
-    50% {
-        opacity: 0.5;
-        transform: rotateY(180deg);
-    }
-    75% {
-        opacity: 1;
-        transform: rotateY(-90deg);
-    }
-    100% {
-        transform: rotateY(-180deg);
-    }
-}
+// @keyframes show {
+//     0% {
+//         transform: rotateY(0deg);
+//     }
+//     25% {
+//         opacity: 0;
+//         transform: rotateY(90deg);
+//     }
+//     50% {
+//         opacity: 0.5;
+//         transform: rotateY(180deg);
+//     }
+//     75% {
+//         opacity: 1;
+//         transform: rotateY(-90deg);
+//     }
+//     100% {
+//         transform: rotateY(-180deg);
+//     }
+// }

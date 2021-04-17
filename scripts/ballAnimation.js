@@ -1,32 +1,46 @@
-let ball = document.getElementsByClassName("pokeball");
-let upperBall = document.getElementById("upper")
+let ballArray = document.getElementsByClassName("pokeball");
+
+let handArray = document.getElementsByClassName("hands")
+
 console.log('test')
     // Pokemon 
-let Charmander = document.getElementById("pokemon-1")
-let Charmeleon = document.getElementById("pokemon-2")
-let Charzard = document.getElementById("pokemon-3")
+    // let Charmander = document.getElementById("pokemon-1")
+    // let Charmeleon = document.getElementById("pokemon-2")
+    // let Charzard = document.getElementById("pokemon-3")
 
-for (i in ball) {
-    ball[i].addEventListener("mouseenter", function(e) {
+for (ball in ballArray) {
+    ballArray[ball].addEventListener("mouseenter", function(e) {
         let id = e.target.closest("a").rel
-        let target = document.getElementById(id)
+        let imgId = `pokemon-${id}`
+        let target = document.getElementById(imgId)
 
+        let handId = `hand-${id}`
+        let hand = document.getElementById(handId)
+            // hand-1
+
+        hand.classList.remove("hover")
+
+        console.log(handId)
+        console.log(imgId)
         console.log(target)
 
         target.classList.remove("hide")
         target.classList.remove("effect")
-        target.classList.remove("hover")
     })
 
-    ball[i].addEventListener("mouseleave", function(e) {
+    ballArray[ball].addEventListener("mouseleave", function(e) {
         let id = e.target.closest("a").rel
-        let target = document.getElementById(id)
+        let imgId = `pokemon-${id}`
+        let target = document.getElementById(imgId)
+
+        let handId = `hand-${id}`
+        let hand = document.getElementById(handId)
 
         console.log(target)
 
-        // target.style.zIndex = "50"
+
         target.classList.add("hide")
         target.classList.add("effect")
-        target.classList.add("hover")
+        hand.classList.add("hover")
     })
 }
