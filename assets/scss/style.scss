@@ -20,10 +20,17 @@ $ball-width: 150px;
 }
 
 .hide {
+    opacity: 1;
+}
+
+.hands {
+    transition: all 1s;
+}
+
+.hover {
     opacity: 0;
 }
 
-// .Choose {}
 .effect {
     transform: translateY(120px);
 }
@@ -50,11 +57,20 @@ body {
         display: flex;
         justify-content: space-evenly;
         width: 90vw;
-        // height: 0;
+        height: 0;
         img {
-            padding-left: 100px;
-            height: 100px;
-            transform: rotate(90deg);
+            &:nth-child(1) {
+                padding-left: 16px;
+                height: 100px;
+            }
+            &:nth-child(2) {
+                padding-left: -18px;
+                height: 100px;
+            }
+            &:nth-child(3) {
+                padding-right: 32px;
+                height: 100px;
+            }
         }
     }
     .imgWrapper {
@@ -72,7 +88,7 @@ body {
             }
             &:nth-child(2) {
                 position: relative;
-                top: 152px;
+                top: 155px;
                 left: 15px;
             }
             &:nth-child(3) {

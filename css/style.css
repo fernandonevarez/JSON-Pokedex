@@ -19,6 +19,15 @@
 }
 
 .hide {
+  opacity: 1;
+}
+
+.hands {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.hover {
   opacity: 0;
 }
 
@@ -57,13 +66,22 @@ body .chooseWrapper {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 90vw;
+  height: 0;
 }
 
-body .chooseWrapper img {
-  padding-left: 100px;
+body .chooseWrapper img:nth-child(1) {
+  padding-left: 16px;
   height: 100px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+}
+
+body .chooseWrapper img:nth-child(2) {
+  padding-left: -18px;
+  height: 100px;
+}
+
+body .chooseWrapper img:nth-child(3) {
+  padding-right: 32px;
+  height: 100px;
 }
 
 body .imgWrapper {
@@ -88,7 +106,7 @@ body .imgWrapper img:nth-child(1) {
 
 body .imgWrapper img:nth-child(2) {
   position: relative;
-  top: 152px;
+  top: 155px;
   left: 15px;
 }
 

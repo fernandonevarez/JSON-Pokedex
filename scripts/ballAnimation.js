@@ -15,6 +15,7 @@ for (i in ball) {
 
         target.classList.remove("hide")
         target.classList.remove("effect")
+        target.classList.remove("hover")
     })
 
     ball[i].addEventListener("mouseleave", function(e) {
@@ -26,5 +27,6 @@ for (i in ball) {
         // target.style.zIndex = "50"
         target.classList.add("hide")
         target.classList.add("effect")
+        target.classList.add("hover")
     })
 }
