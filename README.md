@@ -56,3 +56,10 @@
 ### Timonthy: 
 - Finished the The Cards NEW animation.
 - Fished completly
+
+## 2021-04-16
+
+### David:
+
+- Finished Homepage animations
+- Relocated Files
