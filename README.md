@@ -62,4 +62,4 @@
 ### David:
 
 - Finished Homepage animations
-- Relocated Files
+- organized Files
