@@ -19,15 +19,15 @@ $ball-width: 150px;
     transition: all 1s;
 }
 
-.picture2 {
-    transition: all .8s;
-}
-
+// .picture2 {
+//     transition: all .8s;
+// }
 .hide {
     opacity: 0;
 }
 
 .hover {
+    transition: all .8s;
     opacity: 0;
 }
 
@@ -40,7 +40,11 @@ body {
     display: grid;
     place-items: center;
     font-family: pokeFont;
-    background-color: hsl(195, 41%, 48%);
+    $left-color: #3f87a6;
+    $center-color: #ebf8e1;
+    $right-color: #f69d3c;
+    background: linear-gradient(0.25turn, $left-color, $center-color, $right-color);
+    ;
     .title {
         width: 100vw;
         text-align: center;

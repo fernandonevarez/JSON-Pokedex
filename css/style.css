@@ -18,16 +18,13 @@
   transition: all 1s;
 }
 
-.picture2 {
-  -webkit-transition: all .8s;
-  transition: all .8s;
-}
-
 .hide {
   opacity: 0;
 }
 
 .hover {
+  -webkit-transition: all .8s;
+  transition: all .8s;
   opacity: 0;
 }
 
@@ -41,7 +38,8 @@ body {
   display: grid;
   place-items: center;
   font-family: pokeFont;
-  background-color: #4893ad;
+  background: -webkit-gradient(linear, left top, right top, from(#3f87a6), color-stop(#ebf8e1), to(#f69d3c));
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
 body .title {
