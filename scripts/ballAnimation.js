@@ -1,38 +1,30 @@
-// let ball = document.getElementsById("pokeball");
+let ball = document.getElementsByClassName("pokeball");
+let upperBall = document.getElementById("upper")
+console.log('test')
+    // Pokemon 
+let Charmander = document.getElementById("pokemon-1")
+let Charmeleon = document.getElementById("pokemon-2")
+let Charzard = document.getElementById("pokemon-3")
 
+for (i in ball) {
+    ball[i].addEventListener("mouseenter", function(e) {
+        let id = e.target.closest("a").rel
+        let target = document.getElementById(id)
 
-// ball.addEventListener("mouseover", function() {
-//     anime.remove('#pokeball');
-//     let animation = anime({
-//         targets: '#pokeball',
-//         rotate: [30, -30],
-//         easing: 'easeInOutSine',
-//         duration: 2000,
-//         direction: 'noraml'
-//     })
-// })
+        console.log(target)
 
+        target.classList.remove("hide")
+        target.classList.remove("effect")
+    })
 
-// let animation = anime.timeline({
-//     duration: 2000,
-//     easing: 'easeInOutSine',
-//     direction: 'alternate',
-//     loop: true
-// });
+    ball[i].addEventListener("mouseleave", function(e) {
+        let id = e.target.closest("a").rel
+        let target = document.getElementById(id)
 
-// animation.add({
-//     targets: '.pokeball',
-//     keyframes: [
-//         { translateY: 0 },
-//         { translateX: -80 },
-//         { translateY: -160 },
-//     ],
-//     duration: 4000,
-//     delay: anime.stagger(100)
-//     easing: 'easeOutElastic(1, .8)',
-//     loop: true
-// }).add({
-//     targets: '',
-//     translateY: -50,
-//     backgroundColor: 'rgb(0, 255, 0)'
-// })
+        console.log(target)
+
+        // target.style.zIndex = "50"
+        target.classList.add("hide")
+        target.classList.add("effect")
+    })
+}
