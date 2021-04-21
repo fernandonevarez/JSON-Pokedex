@@ -63,3 +63,11 @@
 
 - Finished Homepage animations
 - organized Files
+
+### Kevin:
+
+- Finished my sections and began working with Nysa and AyJay's group
+
+## 2021-04-19
+
+# Everyone Finished with their section and project is complete.
